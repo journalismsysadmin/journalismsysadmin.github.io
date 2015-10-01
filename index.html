@@ -1,1 +1,454 @@
-My Octopress Page is coming soon &hellip;
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Journal</title>
+  <meta name="author" content="Stretch">
+
+  
+  <meta name="description" content="I'm Stretch, Information Security & Open Source Enthusiast.">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://journalismsysadmin.github.io/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Journal</a></h1>
+  
+    <h2>I'm Stretch, Information Security & Open Source Enthusiast.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+  
+    <form method="get" action="/search.html">
+      <fieldset role="search">
+        <input class="search" name="query" type="text" placeholder="Search..." x-webkit-speech />
+      </fieldset>
+    </form>
+  
+  
+<ul class="main-navigation">
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/blog/topics/projects/">Projects</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a title="subscribe via RSS" rel="subscribe-rss" href="http://www.feedblitz.com/f/?sub=927939">Subscribe</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-02T14:02:00-07:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/chef-series/'>Chef Series</a>, <a class='category' href='/blog/topics/deployment/'>Deployment</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/server-provisioning/'>Server Provisioning</a>
+  
+</span>
+
+
+        
+          <a href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We installed Chef Solo in <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we wrote some recipes in <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">part 2</a>, and now we&rsquo;ll be tying everything together in part 3. When we&rsquo;re done, we&rsquo;ll not only have a fully provisioned server running your Rails app, but we&rsquo;ll also have an automated way of repeating this process whenever such a need arises in the future.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Read on</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-12T09:29:00-07:00" pubdate data-updated="true">Aug 12<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/chef-series/'>Chef Series</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/server-provisioning/'>Server Provisioning</a>
+  
+</span>
+
+
+        
+          <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">part 1</a>, we learned about Chef Solo and used it to create a standard Chef directory structure, along with our own cookbook. Now it&rsquo;s time to start writing the recipes we will run to provision our Rails server and install Node.js, PostgreSQL, rbenv, Ruby, Redis, and Nginx.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Read on</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-28T14:31:00-07:00" pubdate data-updated="true">Jul 28<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/chef-series/'>Chef Series</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>, <a class='category' href='/blog/topics/server-provisioning/'>Server Provisioning</a>
+  
+</span>
+
+
+        
+          <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>About a month ago, I was in the middle of upgrading the server running <a href="http://phindee.com/">Phindee</a> using the harmless (or so I thought) <code>apt-get upgrade</code>. All appeared to be going well. But when I visited the app in the browser, staring back at me was the infamous &ldquo;We&rsquo;re sorry, but something went wrong&rdquo; page. I hit the logs, and luckily, it turned out to be a minor problem that was fixable without too much downtime.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">Read on</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/06/30/backup-a-rails-database-with-the-backup-and-whenever-gems/">Backup a Rails Database With the Backup and Whenever Gems</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-30T16:07:00-07:00" pubdate data-updated="true">Jun 30<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/databases/'>Databases</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>
+  
+</span>
+
+
+        
+          <a href="/blog/2014/06/30/backup-a-rails-database-with-the-backup-and-whenever-gems/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://phindee.com/">Phindee</a> users recently got the ability to &ldquo;like&rdquo; happy hours. Up until that point, all my happy hour data was safely stored in a version controlled <code>seed.rb</code> file, but now I was dealing with data that was dynamically generated and not being backed up anywhere. And that is not a good thing.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/06/30/backup-a-rails-database-with-the-backup-and-whenever-gems/">Read on</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-30T10:40:00-07:00" pubdate data-updated="true">May 30<span>th</span>, 2014</time>
+        
+
+<span class="categories">
+  published in 
+  
+    <a class='category' href='/blog/topics/databases/'>Databases</a>, <a class='category' href='/blog/topics/phindee/'>Phindee</a>
+  
+</span>
+
+
+        
+          <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A few days ago, I added search functionality to <a href="http://phindee.com/">Phindee</a> so users can quickly find information about a particular happy hour. Search that is well-done often comes with autocomplete, and Phindee is no exception.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">Read on</a>
+    </footer>
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      
+      
+        
+        
+          
+        
+        
+          <span>1</span>
+        
+      
+        
+        
+        
+          <a href="/blog/page/2">2</a>
+        
+      
+        
+        
+        
+          <a href="/blog/page/3">3</a>
+        
+      
+        
+        
+        
+          <a href="/blog/page/4">4</a>
+        
+      
+      
+        <a class="next" href="/blog/page/2/">Next &rarr;</a>
+      
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/02/provisioning-a-rails-server-using-chef-part-3-tying-it-all-together/">Provisioning a Rails Server Using Chef, Part 3: Tying It All Together</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/12/provisioning-a-rails-server-using-chef-part-2-writing-the-recipes/">Provisioning a Rails Server Using Chef, Part 2: Writing the Recipes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/28/provisioning-a-rails-server-using-chef-part-1-introduction-to-chef-solo/">Provisioning a Rails Server Using Chef, Part 1: Introduction to Chef Solo</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/30/backup-a-rails-database-with-the-backup-and-whenever-gems/">Backup a Rails Database with the Backup and Whenever Gems</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/05/30/how-to-do-autocomplete-in-rails-using-redis/">How to Do Autocomplete in Rails Using Redis</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>Copyright &copy; 2014 Vladi Gleba</p>
+<p>Produced in Portland, Oregon. Powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/vladigleba/readify">Readify</a>.</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'vladigleba';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://107.170.255.153/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://107.170.255.153/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>
