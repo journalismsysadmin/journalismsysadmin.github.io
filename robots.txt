@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://jsysadmins.github.io/sitemap.xml 
+Sitemap: http://vladigleba.github.io/sitemap.xml 
